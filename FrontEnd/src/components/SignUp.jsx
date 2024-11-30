@@ -26,7 +26,7 @@ function SignUp() {
 
         setIsLoading(true); // Set loading to true
         try {
-            const respo = await axios.post("http://localhost:3000/user/signup", SignupData);
+            const respo = await axios.post("https://primegurukul.onrender.com/user/signup", SignupData);
             
             if (respo.status === 201) {
                 alert('User created successfully');

@@ -11,7 +11,7 @@ function Login() {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-            const resp = await axios.post("http://localhost:3000/user/login",{email , password})
+            const resp = await axios.post("https://primegurukul.onrender.com/user/login",{email , password})
             if (resp.status === 200) {
                 alert("YOU'VE BEEN LOGGED IN");
                 console.log(resp)
